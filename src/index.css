@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Tools Directory Design System - Beautiful and Professional */
+
+@layer base {
+  :root {
+    /* Primary Brand Colors - Modern Blue/Teal Palette */
+    --primary: 200 95% 40%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 200 100% 70%;
+    --primary-dark: 200 90% 25%;
+    
+    /* Admin Panel Colors - Enhanced Dark Theme */
+    --admin-bg: 210 17% 12%;
+    --admin-card: 210 15% 16%;
+    --admin-sidebar: 210 20% 10%;
+    --admin-border: 210 15% 20%;
+    --admin-accent: 200 95% 60%;
+    --admin-accent-dark: 200 85% 50%;
+    --admin-text: 210 15% 95%;
+    --admin-text-muted: 210 10% 70%;
+    --admin-success: 140 70% 55%;
+    --admin-warning: 45 95% 65%;
+    --admin-error: 0 85% 65%;
+    
+    /* Frontend Colors - Clean and Modern */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+    
+    /* Semantic Colors */
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 15% 20%;
+    --muted: 220 10% 95%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 200 100% 96%;
+    --accent-foreground: 200 95% 20%;
+    
+    /* Status Colors */
+    --success: 140 70% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 45 95% 55%;
+    --warning-foreground: 45 95% 15%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Interactive Elements */
+    --border: 220 15% 88%;
+    --input: 220 15% 96%;
+    --ring: 200 95% 50%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-admin: linear-gradient(135deg, hsl(200 95% 60%) 0%, hsl(220 85% 55%) 100%);
+    --gradient-admin-dark: linear-gradient(135deg, hsl(200 85% 50%) 0%, hsl(220 75% 45%) 100%);
+    --gradient-admin-subtle: linear-gradient(180deg, hsl(210 20% 10%) 0%, hsl(210 15% 16%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
+    
+    /* Shadows - Enhanced */
+    --shadow-sm: 0 1px 3px 0 hsl(var(--primary-dark) / 0.1);
+    --shadow-md: 0 4px 15px -2px hsl(var(--primary-dark) / 0.15);
+    --shadow-lg: 0 10px 30px -10px hsl(var(--primary-dark) / 0.25);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+    --shadow-admin: 0 4px 20px hsl(200 95% 60% / 0.15);
+    --shadow-admin-lg: 0 8px 32px hsl(200 95% 60% / 0.2);
+    --shadow-admin-glow: 0 0 24px hsl(200 95% 60% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 12px;
+    
+    /* Sidebar Colors for Admin */
+    --sidebar-background: hsl(var(--admin-sidebar));
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: hsl(var(--admin-accent));
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: hsl(var(--admin-card));
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: hsl(var(--admin-border));
+    --sidebar-ring: hsl(var(--admin-accent));
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 15% 92%;
+    --card: 220 25% 10%;
+    --card-foreground: 220 15% 92%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 220 15% 92%;
+    --primary: 200 95% 55%;
+    --primary-foreground: 220 25% 8%;
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 15% 85%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 200 95% 15%;
+    --accent-foreground: 200 95% 85%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 200 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  --component-border: hsl(var(--border));
+  --component-input: hsl(var(--input));
+  --transition-standard: all 0.2s ease-in-out;
+}
