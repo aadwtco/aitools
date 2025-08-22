@@ -53,7 +53,7 @@ This project is built with:
 - Tailwind CSS
 
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain to my  project?
 
 Yes, you can!
 
